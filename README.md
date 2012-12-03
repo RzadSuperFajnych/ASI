@@ -1,6 +1,6 @@
 ASI
 ===
 
-Omowienie Emeber.js
+Omowienie Emeber.js (Tomek)
 
-Nasz projekt bedzie dotyczyl...
+Nasz projekt bedzie dotyczyl... (to jak?)
