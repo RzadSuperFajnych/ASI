@@ -7,8 +7,8 @@ gem 'rails', '3.2.9'
 
 gem 'sqlite3', '~> 1.3.6',  :groups => [:test, :development]
 gem 'pg', '~> 0.14.1',      :groups => :production
-
-
+gem 'omniauth-facebook'
+gem 'omniauth-github'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
