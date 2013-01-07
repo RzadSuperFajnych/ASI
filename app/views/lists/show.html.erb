@@ -19,9 +19,9 @@
 
 <%= form_for [@list, @task] do |form| %>
 
-<p><%= form.text_field :description %> <%= form.submit %></p>
+<p><%= form.text_field :description %> <%= form.submit "Dodaj zadanie"%></p>
 
 <% end %>
 
 <hr />
-<%= link_to "Back to all lists", lists_url %>
+<%= link_to "Powrot", lists_url %>
