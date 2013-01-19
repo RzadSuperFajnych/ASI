@@ -1,25 +1,21 @@
-Todo::Application.routes.draw do
-
+Calendar::Application.routes.draw do
   get "sessions/new"
 
   get "sessions/create"
 
   get "sessions/failure"
 
-get "home/index"
+  get "home/index"
 
-  resources :lists do
-    resources :tasks
-  end
+  resources :events
 
-  match 'lists/:list_id/tasks/:id/complete' => 'tasks#complete', :as => :complete_task
+  get "calendar/index"
+
+#comment  
   
-  root :to => 'home#index'
+  root :to => "home#index"
   
- 
 get   '/login', :to => 'sessions#new', :as => :login
 match '/auth/:provider/callback', :to => 'sessions#create'
-match '/auth/failure', :to => 'sessions#failure'
-get '/logout', :to => 'sessions#destroy'
-root :to => "home#index"
+match '/auth/failure', :to => 'sessions#failure'  
 end

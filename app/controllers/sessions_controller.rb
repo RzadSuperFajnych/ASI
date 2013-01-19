@@ -4,8 +4,9 @@ class SessionsController < ApplicationController
 
   def create
   auth_hash = request.env['omniauth.auth']
-  redirect_to "http://sesja.herokuapp.com/lists"
+  redirect_to "http://sesja.herokuapp.com/events"
 end
   def failure
   end
+
 end

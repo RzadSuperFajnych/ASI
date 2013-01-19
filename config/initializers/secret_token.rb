@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Todo::Application.config.secret_token = 'e06c9dc7d8240c1f152af4d6a624626377e9f47c863941637e98a8c917535f972b6fad0ccbd1dbe4995d45d97e1aa96dedc75a970b27c78a71a10f06a225e2b8'
+Calendar::Application.config.secret_token = '32a5a4393fe5fb94e07ce8bc1ad1c37bcc1c052d12a2592a4c0a67db96409cdf8a700553bf6107254210984a7ba757a24b95874160586b1de4d5420d4de42db0'

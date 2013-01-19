@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Zadanie:</b>
+  <%= @event.title %>
+</p>
+
+<p>
+  <b>Data rozpoczecia:</b>
+  <%= @event.starts_at %>
+</p>
+
+<p>
+  <b>Data zakonczenia:</b>
+  <%= @event.ends_at %>
+</p>
+
+<p>
+  <b>Zadanie calodniowe:</b>
+  <%= @event.all_day %>
+</p>
+
+<p>
+  <b>Opis:</b>
+  <%= @event.description %>
+</p>
+
+<%= button_to "Edutyj", edit_event_path(@event), :method => "get" %>
+<%= button_to "Powrot", events_path, :method => "get" %>
+
